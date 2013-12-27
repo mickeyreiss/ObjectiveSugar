@@ -168,7 +168,7 @@
 }
 
 - (NSArray *)sortBy:(NSString*)key; {
-    NSSortDescriptor *descriptor = [[[NSSortDescriptor alloc] initWithKey:key ascending:YES] autorelease];
+    NSSortDescriptor *descriptor = [[NSSortDescriptor alloc] initWithKey:key ascending:YES];
     return [self sortedArrayUsingDescriptors:@[descriptor]];
 }
 
